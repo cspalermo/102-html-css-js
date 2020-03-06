@@ -4,18 +4,18 @@ function askName(){
     return document.write('<h3>' + 'Benvenuto!, ' + username + '</h3>')
 }
 
-function askPreference(){
-    var preference = prompt('Do you prefer chocolate or caramel?');
-    var message;
-    if (preference === 'chocolate') {
-    message = 'Yummy, I agree!';
-    } else if (preference === 'caramel') {
-    message = 'Yummy, a bit sticky for my dentures';
-    } else {
-    message = 'Great, another good option';
-    }
-   return document.write('<h3>' + message + '</h3>');
-}
+// function askPreference(){
+//     var preference = prompt('Do you prefer chocolate or caramel?');
+//     var message;
+//     if (preference === 'chocolate') {
+//     message = 'Yummy, I agree!';
+//     } else if (preference === 'caramel') {
+//     message = 'Yummy, a bit sticky for my dentures';
+//     } else {
+//     message = 'Great, another good option';
+//     }
+//    return document.write('<h3>' + message + '</h3>');
+// }
 
 function getItem(){
     var preference = prompt('Would you like to order chocolate or caramel?');
@@ -48,7 +48,7 @@ function howMany(){
   
     // adds a paragraph with an image in it for each number of times
     for (var i = 0; i < total; i++){
-      result = result + '<p>' + item + '</p>';
+      result = result + '<p class="pic">' + item + '</p>';
     }
   return document.write(result);
   }
